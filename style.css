@@ -1,0 +1,99 @@
+   
+  .Checkb input {
+       display: none; 
+    }
+
+  .Checkb span {
+   position: relative;
+   display: inline-block;
+   width: 20px; height: 20px;
+   background: #F5F5F5;
+   border-radius:5px ;
+  }
+
+  .Checkb input:checked + span { 
+   background: #81168f;
+  }
+ 
+  .Checkb input:hover + span { 
+    background: #ded4df;
+   }
+  .Checkb input:checked + span::before { 
+   content: '';
+   position: absolute;
+   left: 7px; top: 11px;
+   background: #fff;
+   width: 11px; height: 2px;
+   transform: rotate(-45deg);
+  }
+
+  .Checkb input:checked + span::after { 
+    content: '';
+    position: absolute;
+    left: 3px; top: 11px;
+    background: #fff;
+    width: 9px; height: 2px;
+    transform: rotate(59deg);
+   }
+
+  .Radiob input { 
+      display: none;
+    }
+  .Radiob span {
+   position: relative; 
+   display: inline-block; 
+   width: 20px; height: 20px; 
+   background: #e7e4e4; 
+   border-radius: 50%;
+  }
+  .Radiob input:checked + span { 
+   background: rgb(241, 44, 44);
+  }
+  .Radiob input:hover + span { 
+    background: #ded4df;
+   }
+  .Radiob input:checked + span::before { 
+   content: '';
+   position: absolute;
+   left: 7px; top: 8px;
+   background: white;
+   width: 5px; height:5px;
+   border-radius: 50%;
+  }
+
+table{
+    border: none;
+    border-spacing: 0px ;
+    height: 400px;
+    width: 300px;
+    margin-left: 38%;
+}
+td{
+    padding: 5px;
+    text-align: center;
+}
+tr{
+    color: rgb(95, 15, 74);
+}
+td:first-child{
+    color: rgb(236, 43, 178);
+}
+td:last-child{
+    color: rgb(236, 43, 85);
+}
+th{
+    background-color: rgb(236, 43, 178);
+}
+tr:first-child{
+    background-color: blueviolet;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: hotpink;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(200, 255, 219);
+    border: none; 
+}
